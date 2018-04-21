@@ -20,6 +20,7 @@
 		64FE6C18208B93C00088DB00 /* HTBeerServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C17208B93C00088DB00 /* HTBeerServiceImplementation.m */; };
 		64FE6C1E208B955C0088DB00 /* HTNetworkClientImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C1D208B955C0088DB00 /* HTNetworkClientImplementation.m */; };
 		64FE6C22208B96410088DB00 /* HTBeerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C21208B96410088DB00 /* HTBeerModel.m */; };
+		64FE6C28208BA4840088DB00 /* HTRequestFactoryImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C27208BA4840088DB00 /* HTRequestFactoryImplementation.m */; };
 		C8F908973F80501C8FFDABF1 /* libPods-Hoppy time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,9 @@
 		64FE6C1D208B955C0088DB00 /* HTNetworkClientImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTNetworkClientImplementation.m; sourceTree = "<group>"; };
 		64FE6C20208B96410088DB00 /* HTBeerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTBeerModel.h; sourceTree = "<group>"; };
 		64FE6C21208B96410088DB00 /* HTBeerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTBeerModel.m; sourceTree = "<group>"; };
+		64FE6C24208BA3AA0088DB00 /* HTRequestFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTRequestFactory.h; sourceTree = "<group>"; };
+		64FE6C26208BA4830088DB00 /* HTRequestFactoryImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTRequestFactoryImplementation.h; sourceTree = "<group>"; };
+		64FE6C27208BA4840088DB00 /* HTRequestFactoryImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTRequestFactoryImplementation.m; sourceTree = "<group>"; };
 		9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hoppy time.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,6 +236,7 @@
 		64FE6C19208B94F20088DB00 /* CoreComponents */ = {
 			isa = PBXGroup;
 			children = (
+				64FE6C23208BA3720088DB00 /* RequestFactory */,
 				64FE6C1A208B95230088DB00 /* NetworkClient */,
 			);
 			path = CoreComponents;
@@ -254,6 +259,16 @@
 				64FE6C21208B96410088DB00 /* HTBeerModel.m */,
 			);
 			path = BeerModel;
+			sourceTree = "<group>";
+		};
+		64FE6C23208BA3720088DB00 /* RequestFactory */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C24208BA3AA0088DB00 /* HTRequestFactory.h */,
+				64FE6C26208BA4830088DB00 /* HTRequestFactoryImplementation.h */,
+				64FE6C27208BA4840088DB00 /* HTRequestFactoryImplementation.m */,
+			);
+			path = RequestFactory;
 			sourceTree = "<group>";
 		};
 		E3214B01DD6092827145947D /* Frameworks */ = {
@@ -364,6 +379,7 @@
 				64FE6BDB208B691B0088DB00 /* main.m in Sources */,
 				64FE6BCD208B691A0088DB00 /* AppDelegate.m in Sources */,
 				64FE6C04208B77FE0088DB00 /* HTMainInteractor.m in Sources */,
+				64FE6C28208BA4840088DB00 /* HTRequestFactoryImplementation.m in Sources */,
 				64FE6C1E208B955C0088DB00 /* HTNetworkClientImplementation.m in Sources */,
 				64FE6C07208B780A0088DB00 /* HTMainRouter.m in Sources */,
 			);
