@@ -8,6 +8,12 @@
 
 #import "HTBeerService.h"
 
+@protocol HTRequestFactory;
+@protocol HTNetworkClient;
+
 @interface HTBeerServiceImplementation : NSObject <HTBeerService>
+
+@property (nonatomic, strong) id<HTRequestFactory> requestFactory;
+@property (nonatomic, strong) id<HTNetworkClient> networkClient;
 
 @end
