@@ -8,6 +8,10 @@
 
 #import "Typhoon.h"
 
+@class HTServicesAssembly;
+
 @interface HTMainAssembly : TyphoonAssembly
+
+@property (nonatomic, strong) HTServicesAssembly *servicesAssembly;
 
 @end

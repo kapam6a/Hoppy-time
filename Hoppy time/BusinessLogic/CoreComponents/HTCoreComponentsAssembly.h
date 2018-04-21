@@ -11,7 +11,7 @@
 @protocol HTNetworkClient;
 @protocol HTRequestFactory;
 
-@interface HTCoreComponentsAssembly : NSObject
+@interface HTCoreComponentsAssembly : TyphoonAssembly
 
 - (id<HTNetworkClient>)networkClient;
 

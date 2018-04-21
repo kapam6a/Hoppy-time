@@ -14,6 +14,9 @@
 #import "HTMainInteractor.h"
 #import "HTMainRouter.h"
 
+//Зависимости
+#import "HTServicesAssembly.h"
+
 @implementation HTMainAssembly
 
 - (HTMainViewController *)mainViewController {
@@ -41,6 +44,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self mainPresenter]];
+                              [definition injectProperty:@selector(beerService)
+                                                    with:[self.servicesAssembly beerService]];
                           }];
 }
 

@@ -9,9 +9,11 @@
 #import "HTMainInteractorInput.h"
 
 @protocol HTMainInteractorOutput;
+@protocol HTBeerService;
 
 @interface HTMainInteractor : NSObject <HTMainInteractorInput>
 
 @property (nonatomic, weak) id<HTMainInteractorOutput> output;
+@property (nonatomic, strong) id<HTBeerService> beerService;
 
 @end

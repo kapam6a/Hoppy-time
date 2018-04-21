@@ -5,6 +5,8 @@
 	<key>TyphoonInitialAssemblies</key>
 	<array>
 		<string>HTMainAssembly</string>
+		<string>HTServicesAssembly</string>
+		<string>HTCoreComponentsAssembly</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
