@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		64FE6BCD208B691A0088DB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6BCC208B691A0088DB00 /* AppDelegate.m */; };
-		64FE6BD0208B691A0088DB00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6BCF208B691A0088DB00 /* ViewController.m */; };
+		64FE6BD0208B691A0088DB00 /* HTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6BCF208B691A0088DB00 /* HTMainViewController.m */; };
 		64FE6BD3208B691A0088DB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FE6BD1208B691A0088DB00 /* Main.storyboard */; };
 		64FE6BD5208B691B0088DB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64FE6BD4208B691B0088DB00 /* Assets.xcassets */; };
 		64FE6BD8208B691B0088DB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FE6BD6208B691B0088DB00 /* LaunchScreen.storyboard */; };
 		64FE6BDB208B691B0088DB00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6BDA208B691B0088DB00 /* main.m */; };
+		64FE6C01208B77EF0088DB00 /* HTMainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C00208B77EF0088DB00 /* HTMainPresenter.m */; };
+		64FE6C04208B77FE0088DB00 /* HTMainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C03208B77FE0088DB00 /* HTMainInteractor.m */; };
+		64FE6C07208B780A0088DB00 /* HTMainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C06208B780A0088DB00 /* HTMainRouter.m */; };
+		64FE6C0A208B781A0088DB00 /* HTMainAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C09208B781A0088DB00 /* HTMainAssembly.m */; };
 		C8F908973F80501C8FFDABF1 /* libPods-Hoppy time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +26,26 @@
 		64FE6BC8208B691A0088DB00 /* Hoppy time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hoppy time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FE6BCB208B691A0088DB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64FE6BCC208B691A0088DB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		64FE6BCE208B691A0088DB00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		64FE6BCF208B691A0088DB00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		64FE6BCE208B691A0088DB00 /* HTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainViewController.h; sourceTree = "<group>"; };
+		64FE6BCF208B691A0088DB00 /* HTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMainViewController.m; sourceTree = "<group>"; };
 		64FE6BD2208B691A0088DB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64FE6BD4208B691B0088DB00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64FE6BD7208B691B0088DB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64FE6BD9208B691B0088DB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64FE6BDA208B691B0088DB00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64FE6BFF208B77EF0088DB00 /* HTMainPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainPresenter.h; sourceTree = "<group>"; };
+		64FE6C00208B77EF0088DB00 /* HTMainPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMainPresenter.m; sourceTree = "<group>"; };
+		64FE6C02208B77FE0088DB00 /* HTMainInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainInteractor.h; sourceTree = "<group>"; };
+		64FE6C03208B77FE0088DB00 /* HTMainInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMainInteractor.m; sourceTree = "<group>"; };
+		64FE6C05208B780A0088DB00 /* HTMainRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainRouter.h; sourceTree = "<group>"; };
+		64FE6C06208B780A0088DB00 /* HTMainRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMainRouter.m; sourceTree = "<group>"; };
+		64FE6C08208B781A0088DB00 /* HTMainAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainAssembly.h; sourceTree = "<group>"; };
+		64FE6C09208B781A0088DB00 /* HTMainAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMainAssembly.m; sourceTree = "<group>"; };
+		64FE6C0B208B782D0088DB00 /* HTMainViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainViewInput.h; sourceTree = "<group>"; };
+		64FE6C0C208B783B0088DB00 /* HTMainViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainViewOutput.h; sourceTree = "<group>"; };
+		64FE6C0D208B784F0088DB00 /* HTMainInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainInteractorInput.h; sourceTree = "<group>"; };
+		64FE6C0E208B78610088DB00 /* HTMainInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainInteractorOutput.h; sourceTree = "<group>"; };
+		64FE6C0F208B78700088DB00 /* HTMainRouterInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMainRouterInput.h; sourceTree = "<group>"; };
 		9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hoppy time.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,10 +91,9 @@
 		64FE6BCA208B691A0088DB00 /* Hoppy time */ = {
 			isa = PBXGroup;
 			children = (
+				64FE6BF8208B77590088DB00 /* UserStories */,
 				64FE6BCB208B691A0088DB00 /* AppDelegate.h */,
 				64FE6BCC208B691A0088DB00 /* AppDelegate.m */,
-				64FE6BCE208B691A0088DB00 /* ViewController.h */,
-				64FE6BCF208B691A0088DB00 /* ViewController.m */,
 				64FE6BD1208B691A0088DB00 /* Main.storyboard */,
 				64FE6BD4208B691B0088DB00 /* Assets.xcassets */,
 				64FE6BD6208B691B0088DB00 /* LaunchScreen.storyboard */,
@@ -85,6 +101,76 @@
 				64FE6BDA208B691B0088DB00 /* main.m */,
 			);
 			path = "Hoppy time";
+			sourceTree = "<group>";
+		};
+		64FE6BF8208B77590088DB00 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6BFE208B77AA0088DB00 /* Main */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		64FE6BF9208B776D0088DB00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6BCE208B691A0088DB00 /* HTMainViewController.h */,
+				64FE6BCF208B691A0088DB00 /* HTMainViewController.m */,
+				64FE6C0B208B782D0088DB00 /* HTMainViewInput.h */,
+				64FE6C0C208B783B0088DB00 /* HTMainViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64FE6BFA208B77750088DB00 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6BFF208B77EF0088DB00 /* HTMainPresenter.h */,
+				64FE6C00208B77EF0088DB00 /* HTMainPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		64FE6BFB208B777E0088DB00 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C02208B77FE0088DB00 /* HTMainInteractor.h */,
+				64FE6C03208B77FE0088DB00 /* HTMainInteractor.m */,
+				64FE6C0D208B784F0088DB00 /* HTMainInteractorInput.h */,
+				64FE6C0E208B78610088DB00 /* HTMainInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		64FE6BFC208B778D0088DB00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C05208B780A0088DB00 /* HTMainRouter.h */,
+				64FE6C06208B780A0088DB00 /* HTMainRouter.m */,
+				64FE6C0F208B78700088DB00 /* HTMainRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		64FE6BFD208B77980088DB00 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C08208B781A0088DB00 /* HTMainAssembly.h */,
+				64FE6C09208B781A0088DB00 /* HTMainAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		64FE6BFE208B77AA0088DB00 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6BFD208B77980088DB00 /* Assembly */,
+				64FE6BFC208B778D0088DB00 /* Router */,
+				64FE6BFB208B777E0088DB00 /* Interactor */,
+				64FE6BFA208B77750088DB00 /* Presenter */,
+				64FE6BF9208B776D0088DB00 /* View */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		E3214B01DD6092827145947D /* Frameworks */ = {
@@ -187,9 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FE6BD0208B691A0088DB00 /* ViewController.m in Sources */,
+				64FE6BD0208B691A0088DB00 /* HTMainViewController.m in Sources */,
+				64FE6C01208B77EF0088DB00 /* HTMainPresenter.m in Sources */,
+				64FE6C0A208B781A0088DB00 /* HTMainAssembly.m in Sources */,
 				64FE6BDB208B691B0088DB00 /* main.m in Sources */,
 				64FE6BCD208B691A0088DB00 /* AppDelegate.m in Sources */,
+				64FE6C04208B77FE0088DB00 /* HTMainInteractor.m in Sources */,
+				64FE6C07208B780A0088DB00 /* HTMainRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +423,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Hoppy time/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Aleksey-Yakimenko.Hoppy-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +441,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Hoppy time/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Aleksey-Yakimenko.Hoppy-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
