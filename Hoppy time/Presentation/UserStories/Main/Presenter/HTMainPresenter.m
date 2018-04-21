@@ -10,11 +10,24 @@
 
 //Зависимости
 #import "HTMainInteractorInput.h"
+#import "HTMainViewInput.h"
 
 @implementation HTMainPresenter
 
+#pragma mark - HTMainViewOutput
+
 - (void)viewIsReady {
     [self.interactor getBeersList];
+}
+
+#pragma mark - HTMainInteractorOutput
+
+- (void)didGetBeersList:(NSArray <HTBeerModel *> *)beerModels {
+    [self.view updateWithModels:beerModels];
+}
+
+- (void)didFailToGetBeersListWithError:(NSError *)error {
+    
 }
 
 @end

@@ -10,4 +10,17 @@
 
 @implementation HTBeerModel
 
+#pragma mark - EKMappingProtocol
+
++ (EKObjectMapping *)objectMapping {
+    return [EKObjectMapping mappingForClass:self
+                                  withBlock:^(EKObjectMapping *mapping) {
+                                      [mapping mapKeyPath:@"beer_name"
+                                               toProperty:NSStringFromSelector(@selector(imageUrl))
+                                           withValueBlock:^id(NSString *key, id value) {
+                                               return [NSURL URLWithString:value];
+                                           }];
+                                  }];
+}
+
 @end

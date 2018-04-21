@@ -10,12 +10,17 @@
 
 //Зависимости
 #import "HTBeerService.h"
+#import "HTMainInteractorOutput.h"
 
 @implementation HTMainInteractor
 
 - (void)getBeersList {
     [self.beerService getBeersListWithCompletionBlock:^(NSArray<HTBeerModel *> *beerModels, NSError *error) {
-        
+        if (error == nil) {
+            [self.output didGetBeersList:beerModels];
+        } else {
+            [self.output didFailToGetBeersListWithError:error];
+        }
     }];
 }
 

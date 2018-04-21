@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^HTCompletionBlock)(NSDictionary *response, NSError *error);
+typedef void (^HTCompletionBlock)(NSArray *response, NSError *error);
 
 @protocol HTNetworkClient <NSObject>
 

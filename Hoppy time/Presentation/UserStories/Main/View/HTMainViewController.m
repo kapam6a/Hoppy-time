@@ -22,11 +22,10 @@
     [self.output viewIsReady];
 }
 
+#pragma mark - HTMainViewInput
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)updateWithModels:(NSArray <HTBeerModel *> *)models {
+    
 }
-
 
 @end

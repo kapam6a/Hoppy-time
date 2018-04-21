@@ -6,9 +6,9 @@
 //  Copyright © 2018 Aleksey Yakimenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <EasyMapping/EasyMapping.h>
 
-@interface HTBeerModel : NSObject
+@interface HTBeerModel : NSObject <EKMappingProtocol>
 
 @property (nonatomic, strong) NSURL *imageUrl;
 

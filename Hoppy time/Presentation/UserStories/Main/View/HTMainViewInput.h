@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class HTBeerModel;
+
 @protocol HTMainViewInput <NSObject>
+
+- (void)updateWithModels:(NSArray <HTBeerModel *> *)models;
 
 @end

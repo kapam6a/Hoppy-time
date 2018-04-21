@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class HTBeerModel;
+
 @protocol HTMainInteractorOutput <NSObject>
+
+- (void)didGetBeersList:(NSArray <HTBeerModel *> *)beerModels;
+- (void)didFailToGetBeersListWithError:(NSError *)error;
 
 @end

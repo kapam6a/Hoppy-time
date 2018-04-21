@@ -15,14 +15,23 @@
 //Модели
 #import "HTBeerModel.h"
 
+//Прочее
+#import <EKMapper.h>
+
 @implementation HTBeerServiceImplementation
 
 - (void)getBeersListWithCompletionBlock:(HTBeerServiceCompletionBlock)completionBlock {
     NSURLRequest *request = [self.requestFactory GETallBeerRequest];
     
     [self.networkClient performRequest:request
-                            completion:^(NSDictionary *response, NSError *error) {
-        
+                            completion:^(NSArray *response, NSError *error) {
+                                if (error == nil) {
+                                    NSArray <HTBeerModel *> *beerModels = [EKMapper arrayOfObjectsFromExternalRepresentation:response
+                                                                                                                 withMapping:[HTBeerModel objectMapping]];
+                                    completionBlock(beerModels, nil);
+                                } else {
+                                    completionBlock(nil, error);
+                                }
     }];
 }
 
