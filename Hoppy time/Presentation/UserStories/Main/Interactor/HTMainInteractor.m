@@ -8,6 +8,15 @@
 
 #import "HTMainInteractor.h"
 
+//Зависимости
+#import "HTBeerService.h"
+
 @implementation HTMainInteractor
+
+- (void)getBeersList {
+    [self.beerService getBeersListWithCompletionBlock:^(NSArray<HTBeerModel *> *beerModels, NSError *error) {
+        
+    }];
+}
 
 @end

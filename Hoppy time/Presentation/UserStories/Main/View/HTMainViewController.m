@@ -8,6 +8,8 @@
 
 #import "HTMainViewController.h"
 
+#import "HTMainViewOutput.h"
+
 @interface HTMainViewController ()
 
 @end
@@ -16,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.output viewIsReady];
 }
 
 

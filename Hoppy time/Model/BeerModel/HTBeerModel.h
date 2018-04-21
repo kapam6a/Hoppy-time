@@ -10,4 +10,6 @@
 
 @interface HTBeerModel : NSObject
 
+@property (nonatomic, strong) NSURL *imageUrl;
+
 @end

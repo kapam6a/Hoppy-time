@@ -8,6 +8,13 @@
 
 #import "HTMainPresenter.h"
 
+//Зависимости
+#import "HTMainInteractorInput.h"
+
 @implementation HTMainPresenter
+
+- (void)viewIsReady {
+    [self.interactor getBeersList];
+}
 
 @end

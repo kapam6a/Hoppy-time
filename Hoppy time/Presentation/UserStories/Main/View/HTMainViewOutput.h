@@ -10,4 +10,6 @@
 
 @protocol HTMainViewOutput <NSObject>
 
+- (void)viewIsReady;
+
 @end

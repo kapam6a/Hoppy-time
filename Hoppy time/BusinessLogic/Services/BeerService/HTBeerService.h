@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class HTBeerModel;
+
+typedef void (^HTBeerServiceCompletionBlock)(NSArray <HTBeerModel *> *beerModels, NSError *error);
+
 @protocol HTBeerService <NSObject>
+
+- (void)getBeersListWithCompletionBlock:(HTBeerServiceCompletionBlock)completionBlock;
 
 @end

@@ -10,4 +10,6 @@
 
 @protocol HTMainInteractorInput <NSObject>
 
+- (void)getBeersList;
+
 @end
