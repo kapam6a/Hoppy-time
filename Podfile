@@ -6,6 +6,7 @@ target 'Hoppy time' do
   # use_frameworks!
   pod 'Typhoon'
   pod 'EasyMapping'
+  pod 'SDWebImage'
   # Pods for Hoppy time
 
 end
