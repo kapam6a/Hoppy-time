@@ -17,9 +17,13 @@
 - (void)getBeersList {
     [self.beerService getBeersListWithCompletionBlock:^(NSArray<HTBeerModel *> *beerModels, NSError *error) {
         if (error == nil) {
-            [self.output didGetBeersList:beerModels];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.output didGetBeersList:beerModels];
+            });
         } else {
-            [self.output didFailToGetBeersListWithError:error];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.output didFailToGetBeersListWithError:error];
+            });
         }
     }];
 }

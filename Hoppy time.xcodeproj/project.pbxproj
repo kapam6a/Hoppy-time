@@ -23,6 +23,8 @@
 		64FE6C28208BA4840088DB00 /* HTRequestFactoryImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C27208BA4840088DB00 /* HTRequestFactoryImplementation.m */; };
 		64FE6C2B208BA59D0088DB00 /* HTServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C2A208BA59D0088DB00 /* HTServicesAssembly.m */; };
 		64FE6C2E208BA6590088DB00 /* HTCoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C2D208BA6590088DB00 /* HTCoreComponentsAssembly.m */; };
+		64FE6C33208BCBC60088DB00 /* HTImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C32208BCBC60088DB00 /* HTImageTableViewCell.m */; };
+		64FE6C35208BCD060088DB00 /* HTImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FE6C34208BCD060088DB00 /* HTImageTableViewCell.xib */; };
 		C8F908973F80501C8FFDABF1 /* libPods-Hoppy time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,9 @@
 		64FE6C2A208BA59D0088DB00 /* HTServicesAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTServicesAssembly.m; sourceTree = "<group>"; };
 		64FE6C2C208BA6590088DB00 /* HTCoreComponentsAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTCoreComponentsAssembly.h; sourceTree = "<group>"; };
 		64FE6C2D208BA6590088DB00 /* HTCoreComponentsAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTCoreComponentsAssembly.m; sourceTree = "<group>"; };
+		64FE6C31208BCBC60088DB00 /* HTImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTImageTableViewCell.h; sourceTree = "<group>"; };
+		64FE6C32208BCBC60088DB00 /* HTImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTImageTableViewCell.m; sourceTree = "<group>"; };
+		64FE6C34208BCD060088DB00 /* HTImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTImageTableViewCell.xib; sourceTree = "<group>"; };
 		9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hoppy time.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +117,7 @@
 		64FE6BCA208B691A0088DB00 /* Hoppy time */ = {
 			isa = PBXGroup;
 			children = (
+				64FE6C2F208BCB480088DB00 /* CustomViews */,
 				64FE6C14208B92D80088DB00 /* Model */,
 				64FE6C13208B91690088DB00 /* Presentation */,
 				64FE6C12208B911B0088DB00 /* BusinessLogic */,
@@ -281,6 +287,24 @@
 			path = RequestFactory;
 			sourceTree = "<group>";
 		};
+		64FE6C2F208BCB480088DB00 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C30208BCB620088DB00 /* Cells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		64FE6C30208BCB620088DB00 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C31208BCBC60088DB00 /* HTImageTableViewCell.h */,
+				64FE6C32208BCBC60088DB00 /* HTImageTableViewCell.m */,
+				64FE6C34208BCD060088DB00 /* HTImageTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		E3214B01DD6092827145947D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +374,7 @@
 				64FE6BD8208B691B0088DB00 /* LaunchScreen.storyboard in Resources */,
 				64FE6BD5208B691B0088DB00 /* Assets.xcassets in Resources */,
 				64FE6BD3208B691A0088DB00 /* Main.storyboard in Resources */,
+				64FE6C35208BCD060088DB00 /* HTImageTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +415,7 @@
 				64FE6BDB208B691B0088DB00 /* main.m in Sources */,
 				64FE6C2E208BA6590088DB00 /* HTCoreComponentsAssembly.m in Sources */,
 				64FE6BCD208B691A0088DB00 /* AppDelegate.m in Sources */,
+				64FE6C33208BCBC60088DB00 /* HTImageTableViewCell.m in Sources */,
 				64FE6C04208B77FE0088DB00 /* HTMainInteractor.m in Sources */,
 				64FE6C28208BA4840088DB00 /* HTRequestFactoryImplementation.m in Sources */,
 				64FE6C1E208B955C0088DB00 /* HTNetworkClientImplementation.m in Sources */,

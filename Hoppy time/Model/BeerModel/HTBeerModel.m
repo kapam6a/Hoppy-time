@@ -15,11 +15,19 @@
 + (EKObjectMapping *)objectMapping {
     return [EKObjectMapping mappingForClass:self
                                   withBlock:^(EKObjectMapping *mapping) {
-                                      [mapping mapKeyPath:@"beer_name"
+                                      [mapping mapKeyPath:@"image_url"
                                                toProperty:NSStringFromSelector(@selector(imageUrl))
                                            withValueBlock:^id(NSString *key, id value) {
                                                return [NSURL URLWithString:value];
                                            }];
+                                      [mapping mapKeyPath:@"name"
+                                               toProperty:NSStringFromSelector(@selector(name))];
+                                      [mapping mapKeyPath:@"abv"
+                                               toProperty:NSStringFromSelector(@selector(abv))];
+                                      [mapping mapKeyPath:@"ibu"
+                                               toProperty:NSStringFromSelector(@selector(ibu))];
+                                      [mapping mapKeyPath:@"description"
+                                               toProperty:NSStringFromSelector(@selector(about))];
                                   }];
 }
 
