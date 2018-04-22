@@ -10,4 +10,6 @@
 
 @protocol HTProfileViewOutput <NSObject>
 
+- (void)viewIsReady;
+
 @end

@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class HTProfileModel;
+
 @protocol HTProfileViewInput <NSObject>
+
+- (void)updateWithProfile:(HTProfileModel *)profileModel;
 
 @end

@@ -30,6 +30,8 @@
 		64FE6C4F208CD00B0088DB00 /* HTProfileInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C4E208CD00B0088DB00 /* HTProfileInteractor.m */; };
 		64FE6C53208CD0830088DB00 /* HTProfileRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C52208CD0830088DB00 /* HTProfileRouter.m */; };
 		64FE6C56208CD09D0088DB00 /* HTProfileAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C55208CD09D0088DB00 /* HTProfileAssembly.m */; };
+		64FE6C5B208CD9750088DB00 /* HTProfileServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C5A208CD9750088DB00 /* HTProfileServiceImplementation.m */; };
+		64FE6C5F208CDA060088DB00 /* HTProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE6C5E208CDA060088DB00 /* HTProfileModel.m */; };
 		C8F908973F80501C8FFDABF1 /* libPods-Hoppy time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,11 @@
 		64FE6C52208CD0830088DB00 /* HTProfileRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTProfileRouter.m; sourceTree = "<group>"; };
 		64FE6C54208CD09D0088DB00 /* HTProfileAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTProfileAssembly.h; sourceTree = "<group>"; };
 		64FE6C55208CD09D0088DB00 /* HTProfileAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTProfileAssembly.m; sourceTree = "<group>"; };
+		64FE6C58208CD9630088DB00 /* HTProfileService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTProfileService.h; sourceTree = "<group>"; };
+		64FE6C59208CD9750088DB00 /* HTProfileServiceImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTProfileServiceImplementation.h; sourceTree = "<group>"; };
+		64FE6C5A208CD9750088DB00 /* HTProfileServiceImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTProfileServiceImplementation.m; sourceTree = "<group>"; };
+		64FE6C5D208CDA060088DB00 /* HTProfileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTProfileModel.h; sourceTree = "<group>"; };
+		64FE6C5E208CDA060088DB00 /* HTProfileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTProfileModel.m; sourceTree = "<group>"; };
 		9F621C73588965C0D4E79BA6 /* libPods-Hoppy time.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hoppy time.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,6 +234,7 @@
 		64FE6C10208B8F520088DB00 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				64FE6C57208CD94A0088DB00 /* ProfileService */,
 				64FE6C29208BA59D0088DB00 /* HTServicesAssembly.h */,
 				64FE6C2A208BA59D0088DB00 /* HTServicesAssembly.m */,
 				64FE6C11208B8FB90088DB00 /* BeerService */,
@@ -264,6 +272,7 @@
 		64FE6C14208B92D80088DB00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				64FE6C5C208CD9F30088DB00 /* ProfileModel */,
 				64FE6C1F208B95AA0088DB00 /* BeerModel */,
 			);
 			path = Model;
@@ -436,6 +445,25 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		64FE6C57208CD94A0088DB00 /* ProfileService */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C58208CD9630088DB00 /* HTProfileService.h */,
+				64FE6C59208CD9750088DB00 /* HTProfileServiceImplementation.h */,
+				64FE6C5A208CD9750088DB00 /* HTProfileServiceImplementation.m */,
+			);
+			path = ProfileService;
+			sourceTree = "<group>";
+		};
+		64FE6C5C208CD9F30088DB00 /* ProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				64FE6C5D208CDA060088DB00 /* HTProfileModel.h */,
+				64FE6C5E208CDA060088DB00 /* HTProfileModel.m */,
+			);
+			path = ProfileModel;
+			sourceTree = "<group>";
+		};
 		E3214B01DD6092827145947D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,8 +571,10 @@
 				64FE6C18208B93C00088DB00 /* HTBeerServiceImplementation.m in Sources */,
 				64FE6C2B208BA59D0088DB00 /* HTServicesAssembly.m in Sources */,
 				64FE6C49208CCB640088DB00 /* HTProfilePresenter.m in Sources */,
+				64FE6C5B208CD9750088DB00 /* HTProfileServiceImplementation.m in Sources */,
 				64FE6C01208B77EF0088DB00 /* HTMainPresenter.m in Sources */,
 				64FE6C0A208B781A0088DB00 /* HTMainAssembly.m in Sources */,
+				64FE6C5F208CDA060088DB00 /* HTProfileModel.m in Sources */,
 				64FE6BDB208B691B0088DB00 /* main.m in Sources */,
 				64FE6C2E208BA6590088DB00 /* HTCoreComponentsAssembly.m in Sources */,
 				64FE6BCD208B691A0088DB00 /* AppDelegate.m in Sources */,

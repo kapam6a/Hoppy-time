@@ -8,6 +8,26 @@
 
 #import "HTProfileInteractor.h"
 
+//Зависимости
+#import "HTProfileService.h"
+#import "HTProfileInteractorOutput.h"
+
 @implementation HTProfileInteractor
+
+#pragma mark - HTProfileInteractorInput
+
+- (void)getProfile {
+    [self.profileService getProfileWithCompletionBlock:^(HTProfileModel *profileModel, NSError *error) {
+        if (error == nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.output didGetProfile:profileModel];
+            });
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.output didFailToGetProfileWithError:error];
+            });
+        }
+    }];
+}
 
 @end

@@ -10,6 +10,7 @@
 
 @protocol HTRequestFactory <NSObject>
 
-- (NSURLRequest *)GETallBeerRequest;
+- (NSURLRequest *)GETAllBeerRequest;
+- (NSURLRequest *)GETProfileRequest;
 
 @end

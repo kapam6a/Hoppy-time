@@ -11,11 +11,13 @@
 @class HTCoreComponentsAssembly;
 
 @protocol HTBeerService;
+@protocol HTProfileService;
 
 @interface HTServicesAssembly : TyphoonAssembly
 
 @property (nonatomic, strong) HTCoreComponentsAssembly *coreComponentsAssembly;
 
-- (id<HTBeerService>)beerService; 
+- (id<HTBeerService>)beerService;
+- (id<HTProfileService>)profileService;
 
 @end

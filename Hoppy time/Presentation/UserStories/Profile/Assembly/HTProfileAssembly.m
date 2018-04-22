@@ -44,6 +44,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self profilePresenter]];
+                              [definition injectProperty:@selector(profileService)
+                                                    with:[self.servicesAssembly profileService]];
                           }];
 }
 

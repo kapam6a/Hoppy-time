@@ -21,7 +21,7 @@
 @implementation HTBeerServiceImplementation
 
 - (void)getBeersListWithCompletionBlock:(HTBeerServiceCompletionBlock)completionBlock {
-    NSURLRequest *request = [self.requestFactory GETallBeerRequest];
+    NSURLRequest *request = [self.requestFactory GETAllBeerRequest];
     
     [self.networkClient performRequest:request
                             completion:^(NSArray *response, NSError *error) {

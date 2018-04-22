@@ -69,8 +69,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bg5-fJ-WUM">
-                                <rect key="frame" x="112" y="58.5" width="150" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Bg5-fJ-WUM">
+                                <rect key="frame" x="112" y="158.5" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="3Yv-Ye-1Hj"/>
                                     <constraint firstAttribute="width" constant="150" id="ULT-rX-43B"/>
@@ -81,20 +81,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-KY-Kke">
-                                <rect key="frame" x="166" y="301" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-KY-Kke">
+                                <rect key="frame" x="170.5" y="401" width="33.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay4-XU-4Oe">
-                                <rect key="frame" x="166" y="258" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay4-XU-4Oe">
+                                <rect key="frame" x="163" y="358" width="48.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-xa-xVR">
-                                <rect key="frame" x="166" y="344" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-xa-xVR">
+                                <rect key="frame" x="150.5" y="444" width="73.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,7 +106,7 @@
                             <constraint firstItem="Ay4-XU-4Oe" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="HGw-zh-S0b"/>
                             <constraint firstItem="SHs-xa-xVR" firstAttribute="top" secondItem="oHF-KY-Kke" secondAttribute="bottom" constant="22" id="IES-G6-Z91"/>
                             <constraint firstItem="SHs-xa-xVR" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="Szg-nU-vrA"/>
-                            <constraint firstItem="Bg5-fJ-WUM" firstAttribute="centerY" secondItem="Wxo-nM-gVt" secondAttribute="centerY" constant="-200" id="bBe-VE-khf"/>
+                            <constraint firstItem="Bg5-fJ-WUM" firstAttribute="centerY" secondItem="Wxo-nM-gVt" secondAttribute="centerY" constant="-100" id="bBe-VE-khf"/>
                             <constraint firstItem="Ay4-XU-4Oe" firstAttribute="top" secondItem="Bg5-fJ-WUM" secondAttribute="bottom" constant="49.5" id="bcG-pC-JiT"/>
                             <constraint firstItem="Bg5-fJ-WUM" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="d3v-2Q-Zch"/>
                             <constraint firstItem="oHF-KY-Kke" firstAttribute="top" secondItem="Ay4-XU-4Oe" secondAttribute="bottom" constant="22" id="fsU-xQ-yNB"/>
@@ -146,5 +146,6 @@
         <image name="beer_icon" width="32" height="32"/>
         <image name="news_icon" width="32" height="32"/>
         <image name="profile_icon" width="32" height="32"/>
+        <image name="profile_placeholder" width="128" height="128"/>
     </resources>
 </document>

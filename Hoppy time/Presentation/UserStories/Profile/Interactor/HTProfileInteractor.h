@@ -9,9 +9,11 @@
 #import "HTProfileInteractorInput.h"
 
 @protocol HTProfileInteractorOutput;
+@protocol HTProfileService;
 
 @interface HTProfileInteractor : NSObject <HTProfileInteractorInput>
 
 @property (nonatomic, weak) id<HTProfileInteractorOutput> output;
+@property (nonatomic, strong) id<HTProfileService> profileService;
 
 @end

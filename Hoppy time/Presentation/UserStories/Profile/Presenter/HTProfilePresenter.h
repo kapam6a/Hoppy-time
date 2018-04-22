@@ -7,12 +7,13 @@
 //
 
 #import "HTProfileViewOutput.h"
+#import "HTProfileInteractorOutput.h"
 
 @protocol HTProfileViewInput;
 @protocol HTProfileInteractorInput;
 @protocol HTProfileRouterInput;
 
-@interface HTProfilePresenter : NSObject <HTProfileViewOutput>
+@interface HTProfilePresenter : NSObject <HTProfileViewOutput, HTProfileInteractorOutput>
 
 @property (nonatomic, weak) id<HTProfileViewInput> view;
 @property (nonatomic, strong) id<HTProfileInteractorInput> interactor;

@@ -10,6 +10,7 @@
 
 //Компоненты ассембли
 #import "HTBeerServiceImplementation.h"
+#import "HTProfileServiceImplementation.h"
 
 //Зависимости
 #import "HTCoreComponentsAssembly.h"
@@ -18,6 +19,16 @@
 
 - (id<HTBeerService>)beerService {
     return [TyphoonDefinition withClass:[HTBeerServiceImplementation class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition injectProperty:@selector(requestFactory)
+                                                    with:[self.coreComponentsAssembly requestFactory]];
+                              [definition injectProperty:@selector(networkClient)
+                                                    with:[self.coreComponentsAssembly networkClient]];
+                          }];
+}
+
+- (id<HTProfileService>)profileService {
+    return [TyphoonDefinition withClass:[HTProfileServiceImplementation class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(requestFactory)
                                                     with:[self.coreComponentsAssembly requestFactory]];

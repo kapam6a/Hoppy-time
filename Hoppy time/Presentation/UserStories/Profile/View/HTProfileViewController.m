@@ -8,6 +8,15 @@
 
 #import "HTProfileViewController.h"
 
+//Зависимости
+#import "HTProfileViewOutput.h"
+
+//Модели
+#import "HTProfileModel.h"
+
+//Прочее
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface HTProfileViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *photoImageView;
@@ -15,14 +24,27 @@
 @property (nonatomic, weak) IBOutlet UILabel *nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *surnameLabel;
 
-
 @end
 
 @implementation HTProfileViewController
 
+#pragma mark - Life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self.output viewIsReady];
+}
+
+#pragma mark - HTProfileViewInput
+
+- (void)updateWithProfile:(HTProfileModel *)profileModel {
+    self.loginLabel.text = profileModel.login ?: @"логин";
+    self.nameLabel.text = profileModel.name ?: @"имя";
+    self.surnameLabel.text = profileModel.surName ?: @"фамилия";
+    
+    [self.photoImageView sd_setImageWithURL:profileModel.photoUrl
+                           placeholderImage:[UIImage imageNamed:@"profile_placeholder"]];
 }
 
 @end

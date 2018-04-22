@@ -10,7 +10,13 @@
 
 @implementation HTRequestFactoryImplementation
 
-- (NSURLRequest *)GETallBeerRequest {
+- (NSURLRequest *)GETAllBeerRequest {
+    NSString *string = [NSString stringWithFormat:@"https://api.punkapi.com/v2/beers"];
+    NSURL *url = [NSURL URLWithString:string];
+    return [NSURLRequest requestWithURL:url];
+}
+
+- (NSURLRequest *)GETProfileRequest {
     NSString *string = [NSString stringWithFormat:@"https://api.punkapi.com/v2/beers"];
     NSURL *url = [NSURL URLWithString:string];
     return [NSURLRequest requestWithURL:url];

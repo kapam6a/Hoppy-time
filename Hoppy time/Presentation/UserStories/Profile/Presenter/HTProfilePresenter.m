@@ -8,6 +8,26 @@
 
 #import "HTProfilePresenter.h"
 
+//Зависимости
+#import "HTProfileViewInput.h"
+#import "HTProfileInteractorInput.h"
+
 @implementation HTProfilePresenter
+
+#pragma mark - HTProfileViewOutput
+
+- (void)viewIsReady {
+    [self.interactor getProfile];
+}
+
+#pragma mark - HTProfileInteractorOutput
+
+- (void)didGetProfile:(HTProfileModel *)profileModel {
+    [self.view updateWithProfile:profileModel];
+}
+
+- (void)didFailToGetProfileWithError:(NSError *)error {
+    
+}
 
 @end

@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class HTProfileModel;
+
 @protocol HTProfileInteractorOutput <NSObject>
+
+- (void)didGetProfile:(HTProfileModel *)profileModel;
+- (void)didFailToGetProfileWithError:(NSError *)error;
 
 @end

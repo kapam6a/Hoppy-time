@@ -14,7 +14,6 @@
 @interface HTCoreComponentsAssembly : TyphoonAssembly
 
 - (id<HTNetworkClient>)networkClient;
-
 - (id<HTRequestFactory>)requestFactory;
 
 @end
