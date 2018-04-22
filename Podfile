@@ -7,6 +7,7 @@ target 'Hoppy time' do
   pod 'Typhoon'
   pod 'EasyMapping'
   pod 'SDWebImage'
+  pod 'Firebase/Auth'
   # Pods for Hoppy time
 
 end
