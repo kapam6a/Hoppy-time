@@ -61,17 +61,65 @@
             </objects>
             <point key="canvasLocation" x="-618" y="-596"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="eAM-l2-m8k">
             <objects>
-                <viewController id="671-dd-r6k" sceneMemberID="viewController">
+                <viewController id="671-dd-r6k" customClass="HTProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wxo-nM-gVt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bg5-fJ-WUM">
+                                <rect key="frame" x="112" y="58.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3Yv-Ye-1Hj"/>
+                                    <constraint firstAttribute="width" constant="150" id="ULT-rX-43B"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-KY-Kke">
+                                <rect key="frame" x="166" y="301" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay4-XU-4Oe">
+                                <rect key="frame" x="166" y="258" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-xa-xVR">
+                                <rect key="frame" x="166" y="344" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oHF-KY-Kke" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="DJC-wg-k9I"/>
+                            <constraint firstItem="Ay4-XU-4Oe" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="HGw-zh-S0b"/>
+                            <constraint firstItem="SHs-xa-xVR" firstAttribute="top" secondItem="oHF-KY-Kke" secondAttribute="bottom" constant="22" id="IES-G6-Z91"/>
+                            <constraint firstItem="SHs-xa-xVR" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="Szg-nU-vrA"/>
+                            <constraint firstItem="Bg5-fJ-WUM" firstAttribute="centerY" secondItem="Wxo-nM-gVt" secondAttribute="centerY" constant="-200" id="bBe-VE-khf"/>
+                            <constraint firstItem="Ay4-XU-4Oe" firstAttribute="top" secondItem="Bg5-fJ-WUM" secondAttribute="bottom" constant="49.5" id="bcG-pC-JiT"/>
+                            <constraint firstItem="Bg5-fJ-WUM" firstAttribute="centerX" secondItem="Wxo-nM-gVt" secondAttribute="centerX" id="d3v-2Q-Zch"/>
+                            <constraint firstItem="oHF-KY-Kke" firstAttribute="top" secondItem="Ay4-XU-4Oe" secondAttribute="bottom" constant="22" id="fsU-xQ-yNB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="F9Q-RU-GyS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile_icon" id="QoU-5s-akH"/>
+                    <connections>
+                        <outlet property="loginLabel" destination="Ay4-XU-4Oe" id="ScK-DL-nOz"/>
+                        <outlet property="nameLabel" destination="oHF-KY-Kke" id="8vk-vN-Wmx"/>
+                        <outlet property="photoImageView" destination="Bg5-fJ-WUM" id="VkJ-m4-6Cp"/>
+                        <outlet property="surnameLabel" destination="SHs-xa-xVR" id="wlt-Jh-qgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTn-Oz-pNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

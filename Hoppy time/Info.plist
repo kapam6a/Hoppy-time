@@ -4,6 +4,7 @@
 <dict>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
+		<string>HTProfileAssembly</string>
 		<string>HTMainAssembly</string>
 		<string>HTServicesAssembly</string>
 		<string>HTCoreComponentsAssembly</string>
